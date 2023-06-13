@@ -347,7 +347,7 @@
             <h4 class="mb-0">This is one time purchase for $1.00. You will receive this immediately after securely
               submitting your
               payment information below:</h4>
-            <div class="mt-4 payment-area text-start">
+            <div class="mt-4 payment-area">
               <img src="assets/images/payment.png" alt="payment">
             </div>
           </div>
@@ -363,11 +363,20 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-lg-6">
                   <div class="mb-4 mt-3">
                     <div class="form-group">
-                      <input class="form-control" type="text" placeholder="What Is Your Security Code?">
-                      <label class="form-label">Security Code</label>
+                      <input class="form-control" type="text" placeholder="MM/YY">
+                      <label class="form-label">Expiry Date</label>
+                      <span class="icon"><i class="fa-solid fa-calendar-days"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="mb-4 mt-3">
+                    <div class="form-group">
+                      <input class="form-control" type="text" placeholder="****">
+                      <label class="form-label">CVC/CVV</label>
                       <span class="icon"><i class="fa-solid fa-lock"></i></span>
                     </div>
                   </div>
@@ -376,26 +385,16 @@
                   <div class="mb-4 mt-3">
                     <div class="form-group">
                       <input class="form-control" type="text" placeholder="Card Holder Name">
-                      <label class="form-label">Holder Name</label>
+                      <label class="form-label">Cardholder Name</label>
                       <span class="icon"><i class="fa-solid fa-user"></i></span>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-12">
                   <div class="mb-4 mt-3">
-                    <div class="form-group">
-                      <input class="form-control" type="text" placeholder="MM/YY">
-                      <label class="form-label">Expiration Month</label>
-                      <span class="icon"><i class="fa-solid fa-calendar-days"></i></span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="mb-4 mt-3">
-                    <div class="form-group">
-                      <input class="form-control" type="text" placeholder="2023">
-                      <label class="form-label">Expiration Year</label>
-                      <span class="icon"><i class="fa-solid fa-calendar-days"></i></span>
+                    <div class="form-check d-flex align-items-center">
+                      <input type="checkbox" class="form-check-input mt-0 rounded-circle" id="savecard">
+                      <label class="form-check-label ms-3" for="savecard">Save Card</label>
                     </div>
                   </div>
                 </div>
